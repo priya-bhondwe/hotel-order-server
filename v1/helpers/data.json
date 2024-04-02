@@ -1,0 +1,14 @@
+{
+  "category": [
+    "beverages",
+    "chinese",
+    "dessert",
+    "fast food",
+    "rice",
+    "roti",
+    "main",
+    "south indian",
+    "starter"
+  ],
+  "type": ["veg", "nonveg"]
+}
