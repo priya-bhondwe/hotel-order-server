@@ -12,7 +12,7 @@ const authorize = require("../helpers/middlewares/authorization");
 
 router.post(
   "/",
-  authorize(["superadmin"]),
+  // authorize(["superadmin"]),
   fileUploader("avatar").single("avatar"),
   updateFileName("avatar", "avatar"),
   handleCreate
@@ -24,8 +24,20 @@ router.put(
   updateFileName("avatar", "avatar"),
   handleUpdate
 );
-router.delete("/:id", authorize(["superadmin", "admin"]), handleDelete);
-router.get("/:id", authorize(["superadmin", "admin"]), handleGetOne);
-router.get("/", authorize(["superadmin"]), handleGetAll);
+router.delete(
+  "/:id",
+  // authorize(["superadmin", "admin"]),
+  handleDelete
+);
+router.get(
+  "/:id",
+  // authorize(["superadmin", "admin"]),
+  handleGetOne
+);
+router.get(
+  "/",
+  // authorize(["superadmin"])
+  handleGetAll
+);
 
 module.exports = router;
