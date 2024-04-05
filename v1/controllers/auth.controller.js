@@ -35,7 +35,7 @@ const authCtrl = {
         const link = `${origin}/reset-password/${token}`;
         //send email
         const to = email;
-        const from = "topperskill@gmail.com";
+        const from = "priya.r.bhondwe@gmail.com";
         const subject = "Password reset link from Topper Hotel";
         const text = `Dear Customer, You Can reset the password by using below link. 
         The link is valid for 10 minutes only

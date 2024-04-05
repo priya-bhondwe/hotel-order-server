@@ -13,12 +13,7 @@ const dishSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now() },
   picture: String,
   timeToPrepare: Number,
-  ratings: [
-    {
-      rate: Number,
-      review: String,
-    },
-  ],
+  ratings: String,
 });
 
 dishSchema.plugin(Autoincrement, { inc_field: "dishId" });

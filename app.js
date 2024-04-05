@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const sendEmail = require("./v1/helpers/email");
 require("dotenv").config({
   path: "./config/.env",
 });

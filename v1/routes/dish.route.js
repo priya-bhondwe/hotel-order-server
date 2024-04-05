@@ -12,14 +12,14 @@ const authorize = require("../helpers/middlewares/authorization");
 
 router.post(
   "/",
-  authorize(["superadmin"]),
+  // authorize(["superadmin"]),
   fileUploader("dishes").single("picture"),
   updateFileName("picture", "dishes"),
   handleCreate
 );
 router.put(
   "/:id",
-  authorize(["superadmin"]),
+  // authorize(["superadmin"]),
   fileUploader("dishes").single("picture"),
   updateFileName("picture", "dishes"),
   handleUpdate
